@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/feyn
+# catalog-date 2009-10-08 14:27:31 +0200
+# catalog-license gpl
+# catalog-version 0.3.3
 Name:		texlive-feyn
 Version:	0.3.3
 Release:	1
@@ -76,6 +82,7 @@ source, and macros for their use are also provided.
 %doc %{_texmfdistdir}/source/fonts/feyn/feyn.drv
 %doc %{_texmfdistdir}/source/fonts/feyn/feyn.dtx
 %doc %{_texmfdistdir}/source/fonts/feyn/feyn.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -86,3 +93,5 @@ source, and macros for their use are also provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
