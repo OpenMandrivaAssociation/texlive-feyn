@@ -6,7 +6,7 @@
 # catalog-version 0.3.3
 Name:		texlive-feyn
 Version:	0.3.3
-Release:	1
+Release:	2
 Summary:	A font for in-text Feynman diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/feyn
