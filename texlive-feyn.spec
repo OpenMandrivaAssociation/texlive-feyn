@@ -82,3 +82,17 @@ source, and macros for their use are also provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3.3-2
++ Revision: 751831
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.3.3-1
++ Revision: 718427
+- texlive-feyn
+- texlive-feyn
+- texlive-feyn
+- texlive-feyn
+
