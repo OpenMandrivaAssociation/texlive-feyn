@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/feyn
-# catalog-date 2009-10-08 14:27:31 +0200
-# catalog-license gpl
-# catalog-version 0.3.3
 Name:		texlive-feyn
-Version:	0.3.3
-Release:	10
+Version:	0.4.1
+Release:	1
 Summary:	A font for in-text Feynman diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/feyn
@@ -37,41 +31,12 @@ source, and macros for their use are also provided.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/source/public/feyn/feyn.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyn10.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyn11.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyn12.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyn18.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyn24.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feynmac.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyntext10.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyntext11.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyntext12.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyntext18.mf
-%{_texmfdistdir}/fonts/source/public/feyn/feyntext24.mf
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyn10.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyn11.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyn12.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyn18.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyn24.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyntext10.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyntext11.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyntext12.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyntext18.tfm
-%{_texmfdistdir}/fonts/tfm/public/feyn/feyntext24.tfm
-%{_texmfdistdir}/tex/latex/feyn/feyn.sty
-%doc %{_texmfdistdir}/doc/fonts/feyn/LICENCE
-%doc %{_texmfdistdir}/doc/fonts/feyn/README
-%doc %{_texmfdistdir}/doc/fonts/feyn/VERSION
-%doc %{_texmfdistdir}/doc/fonts/feyn/exercise-font.pdf
-%doc %{_texmfdistdir}/doc/fonts/feyn/exercise-font.tex
-%doc %{_texmfdistdir}/doc/fonts/feyn/feyn.pdf
-%doc %{_texmfdistdir}/doc/fonts/feyn/overheads.pdf
-%doc %{_texmfdistdir}/doc/fonts/feyn/overheads.tex
+%{_texmfdistdir}/fonts/source/public/feyn
+%{_texmfdistdir}/fonts/tfm/public/feyn
+%{_texmfdistdir}/tex/latex/feyn
+%doc %{_texmfdistdir}/doc/fonts/feyn
 #- source
-%doc %{_texmfdistdir}/source/fonts/feyn/feyn.drv
-%doc %{_texmfdistdir}/source/fonts/feyn/feyn.dtx
-%doc %{_texmfdistdir}/source/fonts/feyn/feyn.ins
+%doc %{_texmfdistdir}/source/fonts/feyn
 
 #-----------------------------------------------------------------------
 %prep
@@ -82,17 +47,3 @@ source, and macros for their use are also provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3.3-2
-+ Revision: 751831
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.3.3-1
-+ Revision: 718427
-- texlive-feyn
-- texlive-feyn
-- texlive-feyn
-- texlive-feyn
-
