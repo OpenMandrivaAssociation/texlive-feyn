@@ -3,7 +3,7 @@ Version:	63945
 Release:	2
 Summary:	A font for in-text Feynman diagrams
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/feyn
+URL:		https://www.ctan.org/tex-archive/fonts/feyn
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feyn.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feyn.doc.r%{version}.tar.xz
